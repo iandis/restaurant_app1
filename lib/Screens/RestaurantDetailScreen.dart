@@ -48,8 +48,17 @@ class RestaurantDetailScreen extends StatelessWidget{
                     ),
                   ),
                   //restaurant rating
-                  Text(
-                    restaurantDetail.rating.toString(),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.star,
+                        size: 16,
+                        color: Colors.yellow[800],
+                      ),
+                      Text(
+                        restaurantDetail.rating.toString(),
+                      ),
+                    ],
                   ),
                   //separator
                   SizedBox(height: 20,),
